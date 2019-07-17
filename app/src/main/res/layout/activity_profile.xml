@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars[13]"
+                android:id="@+id/imageView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:id="@+id/tvName" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" android:layout_marginTop="16dp"
+                android:text="Rosário Pereira Fernandes"/>
+        <TextView
+                android:text="Track: Android"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTrack" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" android:layout_marginTop="32dp"/>
+        <TextView
+                android:text="Country: Mozambique"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvTrack" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="Email: rosariofernandes51@gmail.com"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="Phone Number: 258844471329"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:layout_marginTop="16dp"/>
+        <TextView
+                android:text="Slack Username: @Rosário Pereira Fernandes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
